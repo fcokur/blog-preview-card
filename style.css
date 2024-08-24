@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --yellow: #f4d04e;
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+  --white: #ffffff;
+  --figtree-extrabold: "Figtree ExtraBold", sans-serif;
+  --figtree-semibold: "Figtree SemiBold", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--figtree-extrabold);
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+body {
+  background-color: var(--yellow);
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-section__inner {
+  width: 384px;
+  height: 522px;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.main-section__image {
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+
+.description__category {
+  background-color: var(--yellow);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.description__category--highlighted {
+  font-family: var(--figtree-extrabold);
+  color: var(--gray-950);
+}
+
+.description__date,
+.description__title,
+.description__text {
+  margin-bottom: 12px;
+}
+
+.description__title {
+  font-family: var(--figtree-extrabold);
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.description__date,
+.description__text {
+  font-family: var(--figtree-semibold);
+}
+
+.description__date {
+  font-size: 0.875em;
+  color: var(--gray-950);
+}
+
+.description__text {
+  color: var(--gray-500);
+}
+
+.details {
+  display: flex;
+  align-items: center;
+}
+
+.details__avatar {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  margin-right: 12px;
+}
+
+.details__author {
+  font-family: var(--figtree-semibold);
+  font-weight: 600;
+}
