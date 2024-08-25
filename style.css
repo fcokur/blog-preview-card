@@ -84,6 +84,10 @@ body {
   font-size: 1.5em;
 }
 
+.description__title:hover {
+  color: var(--yellow);
+}
+
 .description__date,
 .description__text {
   font-family: var(--figtree-semibold);
